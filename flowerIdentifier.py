@@ -42,10 +42,6 @@ accuracy =accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy: .2f}')
 print(classification_report(y_test,y_pred))
 
-# model = DecisionTreeClassifier()
-# model.fit(x_train, y_train)
-# y_pred = model.predict(x_test)
-# print(accuracy_score(y_test, y_pred))
-
+#Visualizing the data
 sns.pairplot(df, hue="species", diag_kind="kde")
 plt.show()
